@@ -1,12 +1,67 @@
+# Screen Avatar
 
-turn your screen into a living knowledge base with ai
+A customizable streaming avatar interface built with React, TypeScript, and the HeyGen Streaming Avatar API. This project creates an interactive AI avatar that can communicate through text and voice, perfect for creating engaging digital assistants or virtual companions.
 
-analyse your screen/mic activity in real time and write logs, to build a CRM, market research, ideas, user personas, etc.
+## Features
 
-local LLM first 
+- 🎭 Real-time streaming avatar with voice and text interaction
+- 🎙️ Push-to-talk functionality
+- 💬 Text-to-speech capabilities
+- 🖼️ Floating window mode
+- 🎛️ Multiple avatar selection
+- 🔊 Voice chat with silence detection
+- 🎯 Always-on-top window support
 
-https://github.com/user-attachments/assets/e4c115d9-51cf-4870-aec4-4df4743d2d02
+## Getting Started
 
+### Prerequisites
 
+- Node.js
+- HeyGen API Token
+- Modern web browser
 
-<img width="1312" alt="Screenshot 2024-12-21 at 4 39 29 PM" src="https://github.com/user-attachments/assets/2e395762-198f-43e6-9e5a-2974b8e71fcf" />
+### Installation
+
+1. Install dependencies:
+
+2. Set up your environment variables:
+
+HEYGEN_API_TOKEN=your_token_here
+
+### Usage
+
+typescript
+import { StreamingAvatarDemo } from '@/components/streaming-avatar'
+function App() {
+return <StreamingAvatarDemo apiToken={process.env.HEYGEN_API_TOKEN} />
+}
+
+## Configuration
+
+The avatar can be customized with various options:
+
+- Quality settings (Low/Medium/High)
+- Voice emotion and rate
+- Custom knowledge base for responses
+- Window positioning and appearance
+- Language settings
+
+## API Reference
+
+### Key Components
+
+- `StreamingAvatarDemo`: Main component for avatar interaction
+- `AvatarVideo`: Video display component
+- `AudioInput`: Voice input handling
+- `InteractiveAvatarTextInput`: Text input interface
+
+### Events
+
+- `STREAM_READY`: Fired when avatar stream is initialized
+- `STREAM_STOPPED`: Fired when avatar stream ends
+- `USER_START`: Triggered when user starts talking
+- `USER_STOP`: Triggered when user stops talking
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
