@@ -1,3 +1,5 @@
+main repo is here: https://github.com/mediar-ai/screenpipe
+
 # Screen Avatar
 
 A customizable streaming avatar interface built with React, TypeScript, and the HeyGen Streaming Avatar API. This project creates an interactive AI avatar that can communicate through text and voice, perfect for creating engaging digital assistants or virtual companions.
@@ -65,3 +67,4 @@ The avatar can be customized with various options:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
